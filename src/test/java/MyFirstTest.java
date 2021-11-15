@@ -49,12 +49,9 @@ public class MyFirstTest {
 	@Test
 	public void testIfGreaterOrLesserThanWorks() {
 		String language = "PHP";
-		language.contains("H"); // use assertTrue for this statement
-		language.contains("J");
+		assertTrue(language.contains("H"));
+		assertFalse(language.contains("J"));
 
-
-//		assertTrue("5 is greater than 4", Boolean.parseBoolean(language));
-		assertFalse("5 is not greater than 6", Boolean.parseBoolean(language));
 	}
 	@Test
 	public void testIfInstanceIsNull() {
